@@ -1,2 +1,5 @@
-# Milk-Quality-Predictiion-Analysis
-Predictive analysis techniques, such as machine learning algorithms, can be applied to historical data on milk samples with known quality attributes.
+# Milk-Quality-Prediction-Analysis
+Predictive analysis techniques, such as machine learning algorithms, can be applied to historical data on milk samples with known quality attributes.Accuracy Of model.pkl is 100%.
+Milk quality is a crucial factor in ensuring the safety and nutritional value of dairy products. Predictive analysis techniques can be employed to assess and maintain milk quality using various parameters. In this case, the predictive analysis focuses on evaluating milk quality based on several key parameters, including pH, colour, fat content, turbidity, taste, temperature, and odor.
+These predictive models can help dairy producers and quality control personnel identify potential issues in real-time, enabling prompt interventions to maintain or improve milk quality. Moreover, such analyses contribute to ensuring consumer safety and the delivery of high-quality dairy products to the market.
+Make sure you execute the app.py file with all the dependencies like flask,scikit_learn etc. installed.
