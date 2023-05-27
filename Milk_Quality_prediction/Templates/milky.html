@@ -1,0 +1,115 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Milk Quality Prediction</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='milkybg.jpeg') }}");
+            ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        
+        h3 {
+            text-align: center;
+            color: #fff;
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Milk Quality Prediction</h1>
+
+    <div class="container">
+        <form action="/result" method="POST">
+            <div class="form-group">
+                <label for="ph">pH:</label>
+                <input type="number" id="ph" name="ph" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="temperature">Temperature:</label>
+                <input type="number" id="temperature" name="temperature" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="taste">Taste:</label>
+                <input type="number" id="taste" name="taste" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="odor">Odor:</label>
+                <input type="number" id="odor" name="odor" required>
+            </div>
+            <div class="form-group">
+                <label for="fat">Fat:</label>
+                <input type="number" id="fat" name="fat" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="turbidity">Turbidity:</label>
+                <input type="number" id="turbidity" name="turbidity" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="number" id="color" name="color" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+
+            <center>
+                <h3>{{name}}</h3>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
